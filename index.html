@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood Express | Deliciously Fast</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/fastfood-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#"><span class="text-danger">FAST</span><span class="text-warning">FOOD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#booking">Reservations</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-danger rounded-pill px-4 shadow-sm" href="#booking">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="menu" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-danger fw-bold text-uppercase tracking-wider">Our Specials</span>
+                <h2 class="display-4 fw-bold">Popular Dishes</h2>
+                <hr class="mx-auto bg-danger" style="width: 60px; height: 3px; opacity: 1;">
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500" class="card-img-top" alt="Cheeseburger">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Classic Cheeseburger</h5>
+                            <p class="text-muted small">Double beef patty, aged cheddar, and our secret house sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$9.99</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500" class="card-img-top" alt="Pizza">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Pepperoni Feast</h5>
+                            <p class="text-muted small">Fresh dough, premium pepperoni, mozzarella, and garden basil.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$12.50</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" class="card-img-top" alt="Loaded Fries">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Loaded Fries</h5>
+                            <p class="text-muted small">Crispy golden fries topped with melted cheese, bacon & jalapeños.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$6.99</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="card-img-top" alt="Fried Chicken">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Crispy Bucket</h5>
+                            <p class="text-muted small">6 pieces of our signature buttermilk fried chicken with dip.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$14.99</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=500" class="card-img-top" alt="Tacos">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Street Style Tacos</h5>
+                            <p class="text-muted small">3 soft tacos with spicy beef, salsa, and fresh lime juice.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$8.50</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="./images/grilledveggy.jpg" class="card-img-top" alt="Wrap">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Grilled Veggie Wrap</h5>
+                            <p class="text-muted small">Whole wheat tortilla, roasted veggies, hummus, and feta.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$7.99</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500" class="card-img-top" alt="Milkshake">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Chocolate Dream</h5>
+                            <p class="text-muted small">Rich Belgian chocolate blended with creamy vanilla ice cream.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$5.50</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 food-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500" class="card-img-top" alt="Sandwich">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-1">Club Sandwich</h5>
+                            <p class="text-muted small">Triple decker with turkey, bacon, lettuce, and tomato.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0 text-danger fw-bold">$10.25</span>
+                                <button class="btn btn-light rounded-circle"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-5 bg-light">
+        <div class="container">
+            <div class="row bg-white shadow rounded-4 overflow-hidden mx-1">
+                <div class="col-md-6 d-none d-md-block p-0">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800" class="w-100 h-100" style="object-fit: cover;" alt="Restaurant Interior">
+                </div>
+                <div class="col-md-6 p-5">
+                    <h2 class="fw-bold mb-4">Book a Table</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Full Name</label>
+                                <input type="text" class="form-control bg-light border-0" placeholder="Aswin Sparky">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Phone Number</label>
+                                <input type="tel" class="form-control bg-light border-0" placeholder="+91 7012984396">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Email Address</label>
+                            <input type="email" class="form-control bg-light border-0" placeholder="aswinsparky@icloud.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold">Date & Time</label>
+                            <input type="datetime-local" class="form-control bg-light border-0">
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 py-3 fw-bold shadow-sm">Confirm Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-4">FASTFOOD</h5>
+                    <p class="text small">Serving the best fast food in town since 2015. We care about quality as much as speed.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-md-center">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text text-decoration-none fw-bold">Home</a></li>
+                        <li><a href="#menu" class="text text-decoration-none fw-bold">Menu</a></li>
+                        <li><a href="#booking" class="text text-decoration-none fw-bold">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-md-end">
+                    <h5 class="fw-bold mb-4">Follow Us</h5>
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-muted small mb-0">&copy; 2026 FastFood Express. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
