@@ -1,108 +1,42 @@
-/* Custom Global Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    scroll-behavior: smooth;
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
+body {
+    font-family: var(--bs-body-font-family);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
     font-family: 'Playfair Display', serif;
 }
 
-/* Navbar Tuning */
-.navbar .nav-link {
-    font-weight: 500;
-    transition: 0.3s;
-}
 
-.navbar .nav-link:hover {
-    color: #dc3545 !important;
-}
-
-/* Custom Global Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    scroll-behavior: smooth;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Navbar Tuning */
-.navbar .nav-link {
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.navbar .nav-link:hover {
-    color: #dc3545 !important;
-}
-
-/* Card Hover Effects */
 .food-card {
-    transition: all 0.3s ease-in-out;
-    border-radius: 20px;
-    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .food-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 
-.food-card img {
-    height: 200px;
-    object-fit: cover;
-    transition: 0.5s;
-}
 
-.food-card:hover img {
-    scale: 1.1;
-}
-
-/* Form Styling */
 .form-control:focus {
-    box-shadow: none;
-    background-color: #fff !important;
-    border: 1px solid #dc3545 !important;
+    background-color: #fff;
+    border-color: var(--bs-danger) !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.15);
 }
 
-/* Custom Letter Spacing for headers */
-.tracking-wider {
-    letter-spacing: 2px;
-}
-/* Card Hover Effects */
-.food-card {
-    transition: all 0.3s ease-in-out;
-    border-radius: 20px;
-    overflow: hidden;
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 
-.food-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-}
-
-.food-card img {
-    height: 200px;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.food-card:hover img {
-    scale: 1.1;
-}
-
-/* Form Styling */
-.form-control:focus {
-    box-shadow: none;
-    background-color: #fff !important;
-    border: 1px solid #dc3545 !important;
-}
-
-/* Custom Letter Spacing for headers */
-.tracking-wider {
-    letter-spacing: 2px;
+.footer-link:hover {
+    color: #fff;
+    padding-left: 5px;
 }
